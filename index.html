@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yelp Camp</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- esse css é criado pelo sass (então todas as modificações css que eu fizer, preciso fazer em sass) -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="navbar navbar-expand-md bg-body-primary mx-3 mx-lg-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/Logo.svg" alt="">
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mt-1 me-auto ">
+              <li class="nav-item">
+                <a class="nav-link text-secondary " aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            
+            <ul class="navbar-nav  mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-secondary me-3" href="login.html">Login</a>
+              </li>
+              <a href="signup.html" class="btn btn-dark fw-bold">Create an account</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- SECTION-1 -->
+      <section id="section-1" class="my-4">
+        <div class="container bg-info p-4 p-lg-5">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-6">
+              <h2 class="fw-bold animate__animated animate__bounceInDown">
+                Welcome to YelpCamp!
+              </h2>
+              <p class="text-secondary animate__animated  animate__bounceInUp">
+                View our hand-picked campgrounds from all over the world, or add your own.
+              </p>
+              <form class="d-sm-flex" role="search">
+                <input class="form-control my-2 me-2 animate__animated  animate__bounceInLeft" type="search" placeholder= "Search for camps" aria-label="Search">
+                <button class="btn btn-dark my-2 fw-bold animate__animated  animate__bounceInRight" type="submit">Search</button>
+              </form>
+              <a href="newcampground.html" class="text-secondary add">
+                Or add your own campground
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION-2 -->
+      <section id="section-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 pt-4 wow animate__animated  animate__backInRight animate__delay-1s">
+              <div class="card p-3 h-100">
+                <img class="card-img-top img-fluid" src="img/Camp Images/Latik Riverside.jpg" alt="">
+                <div class="card-body">
+                  <p class="card-title fw-bold pt-3">
+                    Mount Ulap
+                  </p>
+                  <p class="card-text">
+                    One of the most famous hikes in Benguet is Mt Ulap in Itogon.
+                  </p>
+                </div>
+                <div class="card-footer bg-light">
+                  <a href="individualcampground.html" class="btn btn-light border fw-bold w-100">View Campground</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-4 wow animate__animated  animate__backInRight animate__delay-1s">
+              <div class="card p-3 h-100">
+                <img class="card-img-top img-fluid" src="img/Camp Images/Calagus Islands.jpg" alt="">
+                <div class="card-body">
+                  <p class="card-title fw-bold pt-3">
+                    Calaguas Islands
+                  </p>
+                  <p class="card-text">
+                    A paradise of islands that can rival the white sand beauty of Boracay.
+                  </p>
+                </div>
+                <div class="card-footer bg-light">
+                  <a href="individualcampground.html" class="btn btn-light border fw-bold w-100">View Campground</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-4 wow animate__animated  animate__backInRight animate__delay-1s">
+              <div class="card p-3 h-100">
+                <img class="card-img-top img-fluid" src="img/Camp Images/Onay Beach.jpg" alt="">
+                <div class="card-body">
+                  <p class="card-title fw-bold pt-3">
+                    Onay Beach
+                  </p>
+                  <p class="card-text">
+                    This is one of the best beach camping sites, beautiful and pristine.
+                  </p>
+                </div>
+                <div class="card-footer bg-light">
+                  <a href="individualcampground.html" class="btn btn-light border fw-bold w-100">View Campground</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-4 wow animate__animated  animate__backInLeft animate__delay-1s">
+              <div class="card p-3 h-100">
+                <img class="card-img-top img-fluid" src="img/Camp Images/Onay Beach.jpg" alt="">
+                <div class="card-body">
+                  <p class="card-title fw-bold pt-3">
+                    Seven Sisters Waterfall
+                  </p>
+                  <p class="card-text">
+                    The Seven Sisters is the 39th tallest waterfall in Norway.
+                  </p>
+                </div>
+                <div class="card-footer bg-light">
+                  <a href="individualcampground.html" class="btn btn-light border fw-bold w-100">View Campground</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-4 wow animate__animated  animate__backInLeft animate__delay-1s">
+              <div class="card p-3 h-100">
+                <img class="card-img-top img-fluid" src="img/Camp Images/Latik Riverside.jpg" alt="">
+                <div class="card-body">
+                  <p class="card-title fw-bold pt-3">
+                    Latik Riverside
+                  </p>
+                  <p class="card-text">
+                    Philippines is one of the most dazzling countries in all of Asia.
+                  </p>
+                </div>
+                <div class="card-footer bg-light">
+                  <a href="individualcampground.html" class="btn btn-light border fw-bold w-100">View Campground</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-4 wow animate__animated  animate__backInLeft animate__delay-1s">
+              <div class="card p-3 h-100">
+                <img class="card-img-top img-fluid" src="img/Camp Images/Calagus Islands.jpg" alt="">
+                <div class="card-body">
+                  <p class="card-title fw-bold pt-3">
+                    Buloy Springs
+                  </p>
+                  <p class="card-text">
+                    This is one of the best beach camping sites, beautiful and pristine.
+                  </p>
+                </div>
+                <div class="card-footer bg-light">
+                  <a href="individualcampground.html" class="btn btn-light border fw-bold w-100">View Campground</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container py-5 mt-5">
+        <div class="row">
+          <div class="col px-5">
+            <img src="img/Logo.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+
+    <!-- WOW -->
+    <script src="lib/wow/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+
+  </body>
+</html>

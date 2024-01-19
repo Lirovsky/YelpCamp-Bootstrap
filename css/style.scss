@@ -1,0 +1,80 @@
+$dark:      #000;
+$info:      #f9f6f1;
+$light:     #fff;
+
+$border-radius:   0.2rem;
+
+$focus-ring-width:  .1rem;
+$focus-ring-color:  #b5b5b5;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Estilo
+%bold {
+    font-weight: bold;
+}
+%transition {
+    transition: all .5s;
+}
+%scale {
+    transform: scale(1.05);
+}
+%bg-color {
+    background-color: #f7f7f7;
+}
+%placeholder-color {
+    color: #b0b5ba;
+}
+a:hover {
+    @extend %transition;
+    @extend %scale;
+}
+.add:hover {
+    @extend %bold;
+}
+
+#section-1 {
+    .btn {
+        width: 100%;
+    }
+    @media (min-width: 576px) {
+        .btn {
+            width: 20%;
+        }
+    }
+}
+#section-2, #section-4 {
+    .card-img-top:hover {
+        @extend %scale;
+        @extend %transition;
+    }
+    .card-footer {
+        border-top: none;
+    }
+}
+#section-3 {
+    input,textarea {
+        @extend %bg-color;
+
+        &::placeholder {
+            @extend %placeholder-color;
+        }
+    }
+}
+
+#section-6 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+    
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        align-items: center;
+    }
+    #section-6 {
+        height: 100vh;
+    
+    }
+}
